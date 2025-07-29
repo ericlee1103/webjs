@@ -1,0 +1,31 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>name 속성을 이용한 선택</title>
+ </head>
+ <body>
+  <h1>name 속성</h1>
+  <form action="" method="">
+  <div><input type="text" name="id" id="" placeholder="id를 입력하세요" value="abc"></div>
+  <div><input type="password" name="pw" id="" placeholder="pw를 입력하세요" value="1234"></div>
+  </form>
+  <!-- div>(label>input:checkbox)*3 -->
+  <div>
+    <label><input type="checkbox" name="language" value="c">c언어</label>
+    <label><input type="checkbox" name="language" value="java">java</label>
+    <label><input type="checkbox" name="language" value="python">python</label>
+  </div>
+ </body>
+ <script>
+
+  console.log(document.getElementsByName("id"));
+  console.log(document.getElementsByName("language")[0]);
+  console.log(document.getElementsByName("language")[0].value);
+  console.log(document.getElementsByName("language")[0].getAttribute);
+  document.getElementsByName("language").forEach((checkbox) => checkbox.checked = true);
+
+ </script>
+ </html>
