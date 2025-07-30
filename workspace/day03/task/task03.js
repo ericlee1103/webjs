@@ -10,7 +10,9 @@
 //함수명 welcomeUser
 
 //3. 사용자 나이를 입력후 성인이면 true반환, 아니면 false 반환
-
+function isAdault(age){
+  age > 19 ? 'true' : 'false';
+}
 //함수명 isAdult
 
 //4. 객체를 사용해 성적관리 프로그램 만들기

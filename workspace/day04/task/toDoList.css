@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: darkslategrey;
+  height: 25vh;
+  color: white;
+}
+h1{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+ul li a{
+  display: flex;
+  margin: 0 20px;
+  color: white;
+}
+main{
+  width: 100%;
+  background-color: lightgray;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+h2{
+  position: absolute;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  background-color: white;
+}
+button{
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+} 
+main ul{
+  height: 150px;
+  width: 600px;
+  background-color: white;
+  margin: 20px;
+}
+

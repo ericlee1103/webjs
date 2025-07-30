@@ -16,6 +16,11 @@
   // 클래스 이름을 추가하고 li요소의 텍스트를 새아이템입니다로 변경하기
   const liElements = document.getElementsByTagName('li');
   console.log(liElements);
+  for(let i = 0; i < liElements.length; i++){
+    liElements[i].classList.add('item');
+    liElements[i].innerText ='새아이템입니다';
+  }
   // 첫번째 li요소에는 css선택자를 사용하여 글자 색상을 red로 변경하기
+  liElements[0].style.color = 'red';
 </script>
 </html>
