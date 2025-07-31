@@ -5,13 +5,20 @@ addButton.addEventListener('click', function(){
   const taskStr = prompt('할 일을 추가해주세요', " ");
   const newTask = document.createElement('li');
 
-  const CKBox = document.createElement('checkbox');
-  const planList = document.createElement('text'); 
+
+  const CKBox = document.createElement('input');
+  const textBox = document.createTextNode(taskStr);
   const deleteButton = document.createElement('input');
   newTask.appendChild(CKBox);
-  newTask.appendChild(planList);
+  newTask.appendChild(textBox);
   newTask.appendChild(deleteButton);
+  newTask.style.color = "black";
 
-  CKBox.setAttribute()
+  CKBox.setAttribute('type', 'checkbox');
+  deleteButton.setAttribute('type','button');
+  deleteButton.setAttribute('value', '삭제');
+  deleteButton.addEventListener('click', function(){
+    newTask.remove();
+  });
   taskList.appendChild(newTask);
 });
